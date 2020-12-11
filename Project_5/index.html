@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Project 5 Animation and Custom Fonts</title>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,300&display=swap');
+
+
+        /*
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        */
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+            {
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        #box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 140vh;
+        }
+
+        @keyframes zoom {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #box-content {
+            animation: 3s zoom ease-in-out 1;
+            background: #DAF7A6;
+            max-width: 550px;
+            padding: 25px;
+            color: purple;
+        }
+
+        .btn {
+            display: block;
+            color: cornflowerblue;
+            background: blue;
+            font-size: 25px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        @keyframes flash {
+            0% {
+                color: blue;
+                background: lightblue;
+                transform: scale(.5, .5);
+            }
+
+            50% {
+                color: lightcoral;
+                background: gold;
+                transform: scale(1, 1);
+            }
+
+            100 {
+                color: blue;
+                background: lightblue;
+                transform: scale(.5, .5);
+            }
+        }
+
+        .btn:hover {
+            animation: 2s flash ease-in-out infinite;
+            color: lightcoral;
+            background: gold;
+        }
+
+        .btn2 {
+            display: inline-block;
+            background: blue;
+            padding: 15px;
+            border-radius: 25px;
+            color: white;
+            font-family: monospace;
+        }
+
+        .btn2:hover {
+            color: aqua;
+            background: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <div id="box-content">
+            <h1>PROJECT 5</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p><a href="#" class="btn">TRY ME</a> </p>
+
+            <p><a href="#" class="btn2"><i class="fa fa-twitter" style="font-size:40px"></i>Twitter</a> </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
